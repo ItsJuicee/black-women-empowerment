@@ -1,0 +1,153 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colors & Fonts */
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header Styles */
+.header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+.header .logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.btn {
+  background-color: #fff;
+  color: #ff416c;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: #ffe0e0;
+}
+
+/* About */
+.about {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.about h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.about p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+/* Products */
+.products {
+  padding: 50px 20px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.product-card h4 {
+  margin: 15px 0 10px;
+  font-size: 1.2rem;
+  color: #ff416c;
+}
+.product-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.testimonials {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.testimonials h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.testimonial-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+}
+.testimonial {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 250px;
+}
+.testimonial p {
+  font-style: italic;
+}
+.testimonial h4 {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
