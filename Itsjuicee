@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Its Juicee - Intimate Wellness for Black Women</title>
+  <!-- Google Fonts for a modern, clean look -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* Colors inspired by popular earthy tones & vibrant accents */
+    :root {
+      --primary-color: #8A2BE2; /* Purple - Royal & Luxurious */
+      --secondary-color: #FF6F61; /* Coral/Peach - Warm & Inviting */
+      --accent-color: #F4A261; /* Amber - Natural & Earthy */
+      --background-color: #FAF3E0; /* Light Cream */
+      --text-color: #222;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1615432687611-1ac2b0b8f8d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1650&q=80') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 50px 20px;
+      background-color: var(--background-color);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-title {
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    .product-price {
+      color: var(--secondary-color);
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      background-color: var(--secondary-color);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .buy-btn:hover {
+      background-color: #ff4b3e;
+    }
+
+    /* Quotes Section */
+    .quotes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      background-color: #fff;
+    }
+
+    .quote {
+      font-size: 1.5em;
+      font-style: italic;
+      margin: 20px 0;
+      max-width: 700px;
+      text-align: center;
+      color: var(--text-color);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Responsive adjustments */
+    @media(max-width: 768px){
+      header h1 {
+        font-size: 2em;
+      }
+      .hero h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Its Juicee</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#quotes">Quotes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <h2>"Nurture Your Inner Queen"</h2>
+</section>
+
+<!-- Products Section -->
+<section id="products">
+  <div class="section-title">Our Favorite Intimate Wellness Products</div>
+  <div class="products">
+    <!-- Product Card -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1635577188220-4e865b8f4f81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="14 Day Detox" class="product-img"/>
+      <div class="product-info">
+        <div class="product-title">14-Day Detox</div>
+        <div class="product-price">$49.99</div>
+        <a href="#" class="buy-btn">Shop Now</a>
+      </div>
+    </div>
+    <!-- Product Card -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1606941256114-0d2d7d420f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Womb Tea" class="product-img"/>
+      <div class="product-info">
+        <div class="product-title">Womb Tea</div>
+        <div class="product-price">$15.99</div>
+        <a href="#" class="buy-btn">Shop Now</a>
+      </div>
+    </div>
+    <!-- Product Card -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1592194996308-7f6e6f8f9b8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yoni Candies" class="product-img"/>
+      <div class="product-info">
+        <div class="product-title">Yoni Candies</div>
+        <div class="product-price">$9.99</div>
+        <a href="#" class="buy-btn">Shop Now</a>
+      </div>
+    </div>
+    <!-- Add more products as needed -->
+  </div>
+</section>
+
+<!-- Quotes Section -->
+<section id="quotes" class="quotes">
+  <div class="section-title">Empowering Quotes for Black Women</div>
+  <div class="quote">"Self-love is the best love. Embrace your journey."</div>
+  <div class="quote">"Your wellness is your wealth."</div>
+  <div class="quote">"Nurture your body, nurture your soul."</div>
+  <div class="quote">"Black women are magic — inside and out."</div>
+</section>
+
+<!-- Call to Action -->
+<section style="text-align: center; padding: 50px 20px; background-color: #fff;">
+  <h2 style="margin-bottom:20px;">Feel Beautiful, Inside & Out</h2>
+  <a href="#products" class="buy-btn" style="font-size:1.2em;">Shop Now</a>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+  <p>Contact Us: info@itsjuicee.com | Follow us on 
+    <a href="#" style="color:#fff; text-decoration:underline;">Instagram</a> & 
+    <a href="#" style="color:#fff; text-decoration:underline;">Facebook</a>
+  </p>
+  <p>&copy; 2024 Its Juicee. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
